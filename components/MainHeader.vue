@@ -128,7 +128,7 @@
             <h2
               class="text-4xl tracking-tight leading-10 font-extrabold text-gray-200 sm:text-4xl sm:leading-none md:text-5xl"
             >
-             Boost your career as
+             Boost your career as a
               <br class="xl:hidden" />
               <span class="text-green-300">Fullstack Developer</span>
             </h2>
