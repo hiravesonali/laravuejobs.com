@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class=" bg-white mx-20 my-5 mt-20 shadow overflow-hidden sm:rounded-md">
+    <div class=" bg-white mx-20 my-5 mt-10 shadow overflow-hidden sm:rounded-md">
         <ul>
           <li>
             <a
