@@ -8,7 +8,7 @@
           <div class="flex-shrink-0">
             <img
               class="h-16 w-16 rounded"
-              src="https://images.unsplash.com/photo-1551263640-1c007852f616?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+              src="https://images.unsplash.com/photo-1572059002053-8cc5ad2f4a38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
               alt
             />
           </div>
