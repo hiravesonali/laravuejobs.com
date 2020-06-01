@@ -1,31 +1,26 @@
 <template>
-  <div class="relative text-gray-300 w-80 pt-10 max-w-screen-xl mx-auto justify-start mb-7">
-    <button type="submit" class="absolute ml-4 mt-3 mr-4">
-      <svg
-        class="h-4 w-4 fill-current"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        version="1.1"
-        id="Capa_1"
-        x="0px"
-        y="0px"
-        viewBox="0 0 56.966 56.966"
-        style="enable-background:new 0 0 56.966 56.966;"
-        xml:space="preserve"
-        width="512px"
-        height="512px"
-      >
-        <path
-          d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
-        />
-      </svg>
-    </button>
-
-    <input
-      type="search"
-      name="search"
-      placeholder="Search Twitter"
-      class="bg-blue-800 h-10 px-10 pr-5 w-full rounded-full text-sm focus:outline-none bg-purple-white shadow rounded border-0"
-    />
+  <div class="flex-1 px-20 flex w-full py-10 justify-between">
+    <div class="flex-1 flex">
+      <div class="w-80 flex md:ml-0">
+        <label for="search_field" class="sr-only">Search</label>
+        <div class="relative w-full text-green-700 focus-within:text-gray-600">
+          <div class="absolute px-2 inset-y-0 left-0 flex items-center pointer-events-none">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              />
+            </svg>
+          </div>
+          <input
+            id="search_field"
+            class="block w-full border-2 border-green-500 h-full pl-8 pr-3 py-2 rounded-md text-gray-700 placeholder-gray-500 focus:outline focus:placeholder-gray-400 sm:text-sm"
+            placeholder="Search"
+            type="search..."
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
