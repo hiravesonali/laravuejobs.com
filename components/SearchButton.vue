@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 px-20 flex w-full pt-10 pb-5 justify-between">
+  <div class="flex-1 flex w-full pt-10 pb-5 justify-between mx-auto max-w-screen-xl">
     <div class="flex-1 flex">
       <div class="w-80 flex md:ml-0">
         <label for="search_field" class="sr-only">Search</label>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <job-title />
+    <latest-job />
     <search-button />
     <job-list />
   </div>
