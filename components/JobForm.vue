@@ -5,20 +5,34 @@
           <form action="#" method="POST">
             <div class="shadow sm:rounded-md sm:overflow-hidden">
               <div class="px-4 py-5 bg-white sm:p-6">
+                <h2 class="pb-5 text-xl font-bold text-gray-800">The Job Description</h2>
                 <div class="grid grid-cols-3 gap-6">
                   <div class="col-span-3 sm:col-span-2">
                     <label
                       for="company_website"
-                      class="block text-sm font-medium leading-5 text-gray-700"
-                    >Website</label>
+                      class="block text-md font-medium leading-5 text-gray-700"
+                    >Position</label>
                     <div class="mt-1 flex rounded-md shadow-sm">
-                      <span
-                        class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm"
-                      >http://</span>
                       <input
                         id="company_website"
-                        class="form-input flex-1 block w-full rounded-none rounded-r-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                        placeholder="www.example.com"
+                        class="form-input flex-1 block w-full rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                        placeholder="full stack developer"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 mt-6">
+                  <div class="col-span-3 sm:col-span-2">
+                    <label
+                      for="company_website"
+                      class="block text-md font-medium leading-5 text-gray-700"
+                    >Location</label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                      <input
+                        id="company_website"
+                        class="form-input flex-1 block w-full rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                        placeholder="Berlin, Germany"
                       />
                     </div>
                   </div>
