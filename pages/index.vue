@@ -1,8 +1,13 @@
 <template>
   <div>
-    <job-title />
+    <latest-job />
     <search-button />
     <job-list />
   </div>
 </template>
+
 <script>
+export default {
+  layout: 'home'
+}
+</script>
