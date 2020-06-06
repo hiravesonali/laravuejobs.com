@@ -5,7 +5,7 @@
           <form action="#" method="POST">
             <div class="shadow-md sm:rounded-md sm:overflow-hidden">
               <div class="px-4 py-5 bg-white sm:p-6">
-                <h2 class="pb-5 text-xl font-bold text-green-500">The Job Description</h2>
+                <h2 class="pb-5 text-xl font-bold text-green-500">ABOUT JOB</h2>
                 <div class="grid grid-cols-3 gap-6">
                   <div class="col-span-3 sm:col-span-2">
                     <label
@@ -84,14 +84,6 @@
                   >Brief description for your profile.</p>
                 </div>
 
-              </div>
-              <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                <span class="inline-flex rounded-md shadow-sm">
-                  <button
-                    type="submit"
-                    class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
-                  >Save</button>
-                </span>
               </div>
             </div>
           </form>
