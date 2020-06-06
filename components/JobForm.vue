@@ -58,6 +58,54 @@
                     <label
                       for="company_website"
                       class="block text-md font-medium leading-5 text-gray-700"
+                    >Contact Person</label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                      <input
+                        id="company_website"
+                        class="form-input flex-1 block w-full rounded-md border-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                        placeholder="John Doe"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 mt-6">
+                  <div class="col-span-3 sm:col-span-2">
+                    <label
+                      for="company_website"
+                      class="block text-md font-medium leading-5 text-gray-700"
+                    >Contact Person Email</label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                      <input
+                        id="company_website"
+                        class="form-input flex-1 block w-full rounded-md border-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                        placeholder="John@gmail.com"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 mt-6">
+                  <div class="col-span-3 sm:col-span-2">
+                    <label
+                      for="company_website"
+                      class="block text-md font-medium leading-5 text-gray-700"
+                    >URL to apply</label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                      <input
+                        id="company_website"
+                        class="form-input flex-1 block w-full rounded-md border-2 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                        placeholder="https://www.company.de/jobs/apply"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 mt-6">
+                  <div class="col-span-3 sm:col-span-2">
+                    <label
+                      for="company_website"
+                      class="block text-md font-medium leading-5 text-gray-700"
                     >Tags</label>
                     <div class="mt-1 flex rounded-md shadow-sm">
                       <input
