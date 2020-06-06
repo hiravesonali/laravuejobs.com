@@ -67,12 +67,43 @@
         </div>
 
         <div class="mt-5 md:mt-0 md:col-span-1 border-t-8 rounded-md border-green-300">
-              <div class="shadow-md sm:rounded-t-md sm:overflow-hidden">
-                <div class="px-4 bg-white sm:p-6 sm:pb-2">
-                  <h2 class="text-2xl font-bold text-gray-700">About Us</h2>
-                  <p class="text-md font-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="shadow-md sm:rounded-md sm:overflow-hidden">
+                <div class="px-4 bg-white text-center sm:p-6">
+                  <div class="text-lg font-medium text-gray-700">Company</div>
+                  <div class="text-md font-sm text-gray-500">LaraVueJobs</div>
+
+                  <hr class="m-4 mx-16 border-gray-300">
+
+                  <div class="text-lg font-medium text-gray-700">Location</div>
+                  <div class="text-md font-sm text-gray-500">
+                    <span class="flex truncate">
+                      <svg
+                        class="w-5 h-5 mr-1"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                        />
+                      </svg>Berlin, Germany
+                    </span>
+              </div>
+                  <hr class="m-4 mx-16 border-gray-300">
+                  <div class="text-lg font-medium text-gray-700">Salary</div>
+                  <div class="text-md font-sm text-gray-500">$90k – $130k</div>
+                  <hr class="m-4 mx-16 border-gray-300">
+                  <div class="text-lg font-medium text-gray-700">Position type</div>
+                  <div class="text-md font-sm text-gray-500">Full Time</div>
+                  <hr class="m-4 mx-16 border-gray-300">
+                  <div class="text-lg font-medium text-gray-700">Published</div>
+                  <div class="text-md font-sm text-gray-500">5 days ago</div>
+                  <hr class="m-4 mx-16 border-gray-300">
                 </div>
+                <!--
                 <div class="px-4 py-3 bg-indigo-50 text-right sm:px-6 rounded-b-md shadow-md">
                   <span class="inline-flex rounded-md shadow-md">
                         <button
@@ -81,6 +112,7 @@
                         >Apply Now</button>
                       </span>
                 </div>
+                -->
               </div>
         </div>
 
