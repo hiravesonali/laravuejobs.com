@@ -69,13 +69,11 @@
         <div class="mt-5 md:mt-0 md:col-span-1 border-t-8 rounded-md border-green-300">
               <div class="shadow-md sm:rounded-md sm:overflow-hidden">
                 <div class="px-4 bg-white text-center sm:p-6">
-                  <div class="text-lg font-medium text-gray-700">Company</div>
+                  <div class="text-lg font-medium text-gray-700 pb-1">Company</div>
                   <div class="text-md font-sm text-gray-500">LaraVueJobs</div>
-
                   <hr class="m-4 mx-16 border-gray-300">
-
-                  <div class="text-lg font-medium text-gray-700">Location</div>
-                  <div class="text-md font-sm text-gray-500">
+                  <div class="text-lg font-medium text-gray-700 pb-1">Location</div>
+                  <div class="inline-flex text-md font-sm text-gray-500">
                     <span class="flex truncate">
                       <svg
                         class="w-5 h-5 mr-1"
@@ -89,18 +87,23 @@
                         <path
                           d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                         />
-                      </svg>Berlin, Germany
-                    </span>
-              </div>
+                      </svg>
+                    </span>Berlin, Germany</div>
                   <hr class="m-4 mx-16 border-gray-300">
-                  <div class="text-lg font-medium text-gray-700">Salary</div>
+
+                  <div class="text-lg font-medium text-gray-700 pb-1">Salary</div>
                   <div class="text-md font-sm text-gray-500">$90k – $130k</div>
                   <hr class="m-4 mx-16 border-gray-300">
-                  <div class="text-lg font-medium text-gray-700">Position type</div>
+                  <div class="text-lg font-medium text-gray-700 pb-1">Position type</div>
                   <div class="text-md font-sm text-gray-500">Full Time</div>
                   <hr class="m-4 mx-16 border-gray-300">
-                  <div class="text-lg font-medium text-gray-700">Published</div>
+                  <div class="text-lg font-medium text-gray-700 pb-1">Published</div>
                   <div class="text-md font-sm text-gray-500">5 days ago</div>
+                  <hr class="m-4 mx-16 border-gray-300">
+
+                  <hr class="m-4 mx-16 border-gray-300">
+                  <div class="text-lg font-medium text-indigo-500 pb-1">
+                    <span>Website</span> . <span>Twitter</span></div>
                   <hr class="m-4 mx-16 border-gray-300">
                 </div>
                 <!--
