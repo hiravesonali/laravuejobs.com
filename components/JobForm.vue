@@ -1,11 +1,11 @@
 <template>
     <div class="mx-auto max-w-screen-xl pt-20">
       <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="mt-5 md:mt-0 md:col-span-2">
+        <div class="mt-5 md:mt-0 md:col-span-2 border-t-8 rounded-md border-green-300">
           <form action="#" method="POST">
             <div class="shadow-md sm:rounded-md sm:overflow-hidden">
               <div class="px-4 py-5 bg-white sm:p-6">
-                <h2 class="pb-5 text-xl font-bold text-green-500">ABOUT JOB</h2>
+                <h2 class="pb-5 text-xl font-bold text-indigo-500">ABOUT JOB</h2>
                 <div class="grid grid-cols-3 gap-6">
                   <div class="col-span-3 sm:col-span-2">
                     <label
