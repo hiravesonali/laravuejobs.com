@@ -9,6 +9,7 @@
         <job-list-row />
         <job-list-row />
       </ul>
+      <pagination />
     </div>
   </div>
 </template>
