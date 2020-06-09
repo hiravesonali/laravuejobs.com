@@ -68,17 +68,10 @@
             <hr class="m-4 mx-16 border-gray-300" />
             <div class="mt-2 flex justify-center text-sm leading-5 text-gray-500">
               <span
+                v-for="tag in job.tags"
+                :key="tag.id"
                 class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-600 text-indigo-600"
-              >Laravel</span>
-              <span
-                class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-600 text-indigo-600"
-              >PHP</span>
-              <span
-                class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-600 text-indigo-600"
-              >Laravel</span>
-              <span
-                class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-600 text-indigo-600"
-              >PHP</span>
+              >{{ tag.name.en }}</span>
             </div>
           </div>
           <!--

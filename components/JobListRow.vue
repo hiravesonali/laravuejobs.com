@@ -8,8 +8,8 @@
           <div class="flex-shrink-0">
             <img
               class="h-16 w-16 rounded"
-              src="https://images.unsplash.com/photo-1572059002053-8cc5ad2f4a38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-              alt
+              :src="job.company.image ? job.company.image : require('~/assets/images/company-placeholder.png')"
+              :alt="job.company.name"
             />
           </div>
           <div class="min-w-0 flex-initial px-4 md:grid md:grid-cols-2 md:gap-4">
@@ -29,7 +29,8 @@
                     <path
                       d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                     />
-                  </svg>{{ job.company.name }}
+                  </svg>
+                  {{ job.company.name }}
                 </span>
               </div>
             </div>
@@ -37,17 +38,10 @@
               <div>
                 <div class="mt-2 flex items-center text-sm leading-5 text-gray-500">
                   <span
+                    v-for="tag in job.tags"
+                    :key="tag.id"
                     class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-700 text-indigo-700"
-                  >Laravel</span>
-                  <span
-                    class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-700 text-indigo-700"
-                  >PHP</span>
-                  <span
-                    class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-700 text-indigo-700"
-                  >VueJs</span>
-                  <span
-                    class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-700 text-indigo-700"
-                  >TailwindCSS</span>
+                  >{{ tag.name.en }}</span>
                 </div>
               </div>
             </div>
