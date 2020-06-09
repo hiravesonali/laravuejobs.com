@@ -39,7 +39,9 @@ export default {
     /*
      ** Nuxt.js modules
      */
-    modules: [],
+    modules: [
+        '@nuxt/http',
+    ],
     /*
      ** Build configuration
      */

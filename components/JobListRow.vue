@@ -14,7 +14,7 @@
           </div>
           <div class="min-w-0 flex-initial px-4 md:grid md:grid-cols-2 md:gap-4">
             <div>
-              <div class="text-xl leading-5 font-medium text-indigo-600 truncate">Job Name</div>
+              <div class="text-xl leading-5 font-medium text-indigo-600 truncate">{{ job.title }}</div>
               <div class="mt-2 flex items-center text-medium leading-5 text-gray-500">
                 <span class="flex truncate">
                   <svg
@@ -29,7 +29,7 @@
                     <path
                       d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                     />
-                  </svg>Company name
+                  </svg>{{ job.company.name }}
                 </span>
               </div>
             </div>
@@ -68,7 +68,7 @@
                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
               />
             </svg>
-            Remote
+            {{ job.location.name }} {{ job.is_remote ? '(Remote)' : '' }}
           </div>
           <div class="text-sm leading-5 text-gray-500 float-right mt-1">2 days ago</div>
         </div>
@@ -76,3 +76,11 @@
     </a>
   </li>
 </template>
+
+<script>
+export default {
+  props: {
+    job: [Object, Array]
+  }
+}
+</script>
