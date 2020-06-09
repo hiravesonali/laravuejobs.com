@@ -70,7 +70,7 @@
             </svg>
             {{ job.location.name }} {{ job.is_remote ? '(Remote)' : '' }}
           </div>
-          <div class="text-sm leading-5 text-gray-500 float-right mt-1">2 days ago</div>
+          <div class="text-sm leading-5 text-gray-500 float-right mt-1">{{ job.published}}</div>
         </div>
       </div>
     </a>
