@@ -6,14 +6,22 @@
             <h2
               class="text-2xl tracking-tight leading-10 font-medium text-indigo-600 sm:text-4xl sm:leading-none md:text-5xl"
             >
-             Senior Full Stack Engineer - Laravel
+             {{ job.title }}
             </h2>
             <p
               class="mt-3 max-w-md mx-auto text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
-            >LaraVueJobs</p>
+            >{{ job.company.name }}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    job: [Object]
+  }
+}
+</script>

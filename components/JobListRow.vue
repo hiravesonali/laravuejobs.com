@@ -2,7 +2,7 @@
   <li
     class="border-2 rounded-md bg-white mb-4 shadow-sm border-gray-200 hover:border-green-200 hover:bg-green-100 transition duration-150 ease-in-out"
   >
-    <a href="#" class>
+    <nuxt-link :to="'job/' + job.slug">
       <div class="flex items-center px-3 py-3 sm:px-6">
         <div class="min-w-0 flex-1 flex items-center">
           <div class="flex-shrink-0">
@@ -73,7 +73,7 @@
           <div class="text-sm leading-5 text-gray-500 float-right mt-1">{{ job.published}}</div>
         </div>
       </div>
-    </a>
+    </nuxt-link>
   </li>
 </template>
 
