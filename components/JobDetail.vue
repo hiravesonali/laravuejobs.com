@@ -16,7 +16,7 @@
             <span class="inline-flex rounded-md shadow-md">
               <button
                 type="submit"
-                class="inline-flex justify-center py-2 px-10 border border-transparent text-lg leading-5 font-medium rounded-md text-white bg-indigo-500 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                class="inline-flex justify-center py-2 px-20 border border-transparent text-lg leading-5 font-medium rounded-md text-white bg-indigo-500 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
               >Apply Now</button>
             </span>
           </div>
@@ -26,16 +26,26 @@
       <div class="mt-5 md:mt-0 md:col-span-1 border-t-8 rounded-md border-green-300">
         <div class="shadow-md sm:rounded-md sm:overflow-hidden">
           <div class="px-4 bg-white text-center sm:p-6">
-            <div class="text-lg font-medium text-gray-700 pb-1">Company</div>
+            <img
+              class="h-16 w-16 rounded inline-flex"
+              :src="job.company.image ? job.company.image : require('~/assets/images/company-placeholder.png')"
+              :alt="job.company.name"
+            />
+            <div class="text-lg font-medium text-gray-700 pb-1">{{ job.company.name }}</div>
+            <div class="text-lg font-medium text-gray-800 pb-1">
+                <a :href="job.company.website" target="_blank">{{ job.company.website }}</a>
+            </div>
             <div class="inline-flex text-md font-sm text-indigo-600">
-              <span class="flex truncate">
+              <a  :href="'https://twitter.com/'+ job.company.twitter_handle" class="flex truncate" target="_blank">
                 <svg class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
                   />
                 </svg>
-              </span>{{ job.company.name }}
+                {{ job.company.twitter_handle }}
+              </a>
             </div>
+
             <hr class="m-4 mx-16 border-gray-300" />
             <div class="text-lg font-medium text-gray-700 pb-1">Location</div>
             <div class="inline-flex text-md font-sm text-gray-500">
@@ -73,17 +83,16 @@
                 class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-600 text-indigo-600"
               >{{ tag.name.en }}</span>
             </div>
-          </div>
-          <!--
-                <div class="px-4 py-3 bg-indigo-50 text-right sm:px-6 rounded-b-md shadow-md">
+            <hr class="m-4 mx-16 border-gray-300" />
+            <div class="inline-flex px-2 py-1 text-right sm:px-4 ">
                   <span class="inline-flex rounded-md shadow-md">
                         <button
                           type="submit"
-                          class="inline-flex justify-center py-2 px-10 border border-transparent text-lg leading-5 font-medium rounded-md text-white bg-indigo-500 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                          class="inline-flex py-2 px-10 border border-transparent text-lg leading-5 font-medium rounded-md text-gray-50 bg-green-400 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
                         >Apply Now</button>
                       </span>
-                </div>
-          -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
