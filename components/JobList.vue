@@ -4,7 +4,7 @@
       <ul>
         <job-list-row v-for="job of jobs.data" :key="job.id" :job="job" />
       </ul>
-      <pagination :meta="jobs.meta" :links="jobs.links" @paginate="onPaginate" />
+      <!--pagination :meta="jobs.meta" :links="jobs.links" @paginate="onPaginate" /-->
     </div>
   </div>
 </template>
