@@ -3,13 +3,13 @@
   <div class="hidden sm:block">
     <p class="text-sm leading-5 text-green-500">
       Showing
-      <span class="font-medium">1
+      <span class="font-medium">{{ meta.from }}
       </span>
       to
-      <span class="font-medium">10
+      <span class="font-medium">{{ meta.to }}
       </span>
       of
-      <span class="font-medium">20
+      <span class="font-medium">{{ meta.total }}
       </span>
       results
     </p>
@@ -24,3 +24,12 @@
   </div>
 </nav>
 </template>
+
+<script>
+export default {
+  props: {
+    links: Object,
+    meta: Object
+  }
+}
+</script>
