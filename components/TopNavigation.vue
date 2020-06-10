@@ -23,10 +23,10 @@
           </div>
         </div>
         <div class="hidden md:block font-medium text-lg text-gray-200">
-          <nuxt-link
-            to="/"
+          <a
+            href="/"
             class="py-2 px-3 hover:text-white hover:bg-indigo-600 rounded-md focus:outline-none transition duration-150 ease-in-out"
-          >Top Jobs</nuxt-link>
+          >Top Jobs</a>
           <nuxt-link
             to="/about"
             class="ml-5 py-2 px-4 hover:text-white hover:bg-indigo-600 rounded-md focus:outline-none transition duration-150 ease-in-out"
