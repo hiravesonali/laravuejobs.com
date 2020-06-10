@@ -37,7 +37,7 @@
         >
           <span class="inline-flex rounded-md shadow">
             <nuxt-link
-              to="/post-your-job"
+              to="/post-a-job"
               class="relative inline-flex items-center px-6 py-3 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-green-400 hover:bg-green-500 focus:outline-none transition duration-150 ease-in-out"
             >
               <svg
