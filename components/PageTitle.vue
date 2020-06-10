@@ -3,7 +3,7 @@
     <h2
       class="text-3xl leading-10 font-bold text-gray-700"
     >
-      Latest Job
+      Top Jobs
     </h2>
   </div>
 </template>

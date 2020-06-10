@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="max-w-screen-xl mx-auto overflow-hidden sm:rounded-md">
+    <div class="mt-10 max-w-screen-xl mx-auto overflow-hidden sm:rounded-md">
       <ul>
         <job-list-row v-for="job of jobs.data" :key="job.id" :job="job" />
       </ul>

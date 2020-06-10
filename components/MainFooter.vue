@@ -3,7 +3,7 @@
     <div class="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center">
         <div class="px-5 py-2">
-          <a href="#" class="text-lg leading-6 text-gray-50 hover:text-gray-300">About</a>
+          <nuxt-link to="/about" class="text-lg leading-6 text-gray-50 hover:text-gray-300">About</nuxt-link>
         </div>
         <div class="px-5 py-2">
           <a href="#" class="text-lg leading-6 text-gray-50 hover:text-gray-300">Laravel</a>
@@ -16,7 +16,7 @@
         </div>
       </nav>
       <div class="mt-8 flex justify-center">
-        <a href="#" class="ml-6 text-white hover:text-gray-300">
+        <a href="https://www.instagram.com/shona_designer/?hl=en" class="ml-6 text-white hover:text-gray-300" target="_blank">
           <span class="sr-only">Instagram</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -26,7 +26,7 @@
             />
           </svg>
         </a>
-        <a href="#" class="ml-6 text-white hover:text-gray-300">
+        <a href="https://twitter.com/ShonaDesign" class="ml-6 text-white hover:text-gray-300" target="_blank">
           <span class="sr-only">Twitter</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -34,7 +34,7 @@
             />
           </svg>
         </a>
-        <a href="#" class="ml-6 text-white hover:text-gray-300">
+        <a href="https://github.com/hiravesonali" class="ml-6 text-white hover:text-gray-300" target="_blank">
           <span class="sr-only">GitHub</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
             <path

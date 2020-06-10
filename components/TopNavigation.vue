@@ -23,18 +23,14 @@
           </div>
         </div>
         <div class="hidden md:block font-medium text-lg text-gray-200">
-          <a
-            href="#"
+          <nuxt-link
+            to="/"
             class="py-2 px-3 hover:text-white hover:bg-indigo-600 rounded-md focus:outline-none transition duration-150 ease-in-out"
-          >Laravel Jobs</a>
-          <a
-            href="#"
-            class="ml-7 py-2 px-3 hover:text-white hover:bg-indigo-600 rounded-md focus:outline-none transition duration-150 ease-in-out"
-          >VueJs Jobs</a>
-          <a
-            href="#"
+          >Top Jobs</nuxt-link>
+          <nuxt-link
+            to="/about"
             class="ml-5 py-2 px-4 hover:text-white hover:bg-indigo-600 rounded-md focus:outline-none transition duration-150 ease-in-out"
-          >About</a>
+          >About</nuxt-link>
         </div>
         <div
           class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"

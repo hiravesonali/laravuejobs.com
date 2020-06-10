@@ -1,7 +1,7 @@
 <template>
   <div>
-    <latest-job />
-    <search-button />
+    <page-title />
+    <!--  <search-button />  -->
     <job-list />
   </div>
 </template>
