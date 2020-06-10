@@ -15,12 +15,20 @@
     </p>
   </div>
   <div class="flex-1 flex justify-between sm:justify-end">
-    <a href="#" class="relative inline-flex items-center px-4 py-2 border-2 border-green-400 text-sm leading-5 font-semibold rounded-md text-green-600 bg-white hover:text-indigo-600 hover:border-indigo-400 transition ease-in-out duration-150">
+    <button
+      v-on:click="$emit('paginate', 'Prev')"
+      :disabled="!links.prev"
+      :class="links.prev ? '' : 'opacity-50 cursor-not-allowed '"
+      class="relative inline-flex items-center px-4 py-2 border-2 border-green-400 text-sm leading-5 font-semibold rounded-md text-green-600 bg-white hover:text-indigo-600 hover:border-indigo-400 transition ease-in-out duration-150">
       Previous
-    </a>
-    <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border-2 border-green-400 text-sm leading-5 font-semibold rounded-md text-green-600 bg-white hover:text-indigo-600 hover:border-indigo-400 transition ease-in-out duration-150">
+    </button>
+    <button
+      v-on:click="$emit('paginate', 'Next')"
+      :disabled="!links.next"
+      :class="links.next ? '' : 'opacity-50 cursor-not-allowed '"
+      class="ml-3 relative inline-flex items-center px-4 py-2 border-2 border-green-400 text-sm leading-5 font-semibold rounded-md text-green-600 bg-white hover:text-indigo-600 hover:border-indigo-400 transition ease-in-out duration-150">
       Next
-    </a>
+    </button>
   </div>
 </nav>
 </template>
