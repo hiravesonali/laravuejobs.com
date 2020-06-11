@@ -13,7 +13,7 @@
 export default {
   data () {
     return {
-      url: 'http://api.laravuejobs.test/api/jobs',
+      url: 'https://api.laravuejobs.com/api/jobs',
       jobs: {}
     }
   },

@@ -15,7 +15,7 @@ export default {
     }
   },
   async fetch () {
-    await this.$http.$get('http://api.laravuejobs.test/api/jobs/' + this.$route.params.slug)
+    await this.$http.$get('https://api.laravuejobs.com/api/jobs/' + this.$route.params.slug)
       .then((result) => {
         this.job = result
       })

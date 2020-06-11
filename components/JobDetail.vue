@@ -6,9 +6,7 @@
           <div class="px-4 bg-white sm:p-6 sm:pb-2">
             <h2 class="text-2xl font-bold text-gray-700">About Us</h2>
             <div class="grid gap-6">
-              <p class="text-md font-sm text-gray-500">
-                {{ job.description }}
-              </p>
+              <p class="text-md font-sm text-gray-500" v-html="job.description"></p>
             </div>
           </div>
 
@@ -25,10 +23,10 @@
 
         <div class="inline-flex py-6 text-right">
                   <span class="inline-flex rounded-md shadow-md">
-                        <a
-                          href="/"
-                          class="inline-flex py-2 px-7 border border-transparent text-lg leading-5 font-medium rounded-md text-gray-50 bg-green-400 hover:bg-green-500 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
-                        >Back to Job</a>
+                        <nuxt-link
+                          to="/"
+                          class="inline-flex py-2 px-7 border border-gray-300 text-lg leading-5 font-medium rounded-md text-gray-900 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                        >Back to list</nuxt-link>
                       </span>
             </div>
       </div>
@@ -42,9 +40,6 @@
               :alt="job.company.name"
             />
             <div class="text-lg font-medium text-gray-700 pb-1">{{ job.company.name }}</div>
-            <div class="text-lg font-medium text-gray-800 pb-1">
-                <a :href="job.company.website" target="_blank">{{ job.company.website }}</a>
-            </div>
             <div class="inline-flex text-md font-sm text-indigo-600">
               <a  :href="'https://twitter.com/'+ job.company.twitter_handle" class="flex truncate" target="_blank">
                 <svg class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
@@ -54,6 +49,9 @@
                 </svg>
                 {{ job.company.twitter_handle }}
               </a>
+            </div>
+            <div class="text-lg font-medium text-gray-800 pb-1">
+                <a :href="job.company.website" target="_blank">{{ job.company.website }}</a>
             </div>
 
             <hr class="m-4 mx-16 border-gray-300" />
@@ -77,31 +75,43 @@
             </div>
             <hr class="m-4 mx-16 border-gray-300" />
 
-            <div class="text-lg font-medium text-gray-700 pb-1">Salary</div>
-            <div class="text-md font-sm text-gray-500">{{ job.salary }}</div>
-            <hr class="m-4 mx-16 border-gray-300" />
-            <div class="text-lg font-medium text-gray-700 pb-1">Position type</div>
-            <div class="text-md font-sm text-gray-500">{{ job.type }}</div>
-            <hr class="m-4 mx-16 border-gray-300" />
-            <div class="text-lg font-medium text-gray-700 pb-1">Published</div>
-            <div class="text-md font-sm text-gray-500">{{ job.published}}</div>
-            <hr class="m-4 mx-16 border-gray-300" />
-            <div class="mt-2 flex justify-center text-sm leading-5 text-gray-500">
-              <span
-                v-for="tag in job.tags"
-                :key="tag.id"
-                class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-600 text-indigo-600"
-              >{{ tag.name.en }}</span>
+            <div v-if="job.salary">
+              <div class="text-lg font-medium text-gray-700 pb-1">Salary</div>
+              <div class="text-md font-sm text-gray-500">{{ job.salary }}</div>
+              <hr class="m-4 mx-16 border-gray-300" />
             </div>
-            <hr class="m-4 mx-16 border-gray-300" />
+
+            <div v-if="job.type">
+              <div class="text-lg font-medium text-gray-700 pb-1">Position type</div>
+              <div class="text-md font-sm text-gray-500">{{ job.type }}</div>
+              <hr class="m-4 mx-16 border-gray-300" />
+            </div>
+
+            <div v-if="job.published">
+              <div class="text-lg font-medium text-gray-700 pb-1">Published</div>
+              <div class="text-md font-sm text-gray-500">{{ job.published}}</div>
+              <hr class="m-4 mx-16 border-gray-300" />
+            </div>
+
+            <div v-if="job.tags">
+              <div class="mt-2 flex justify-center text-sm leading-5 text-gray-500">
+                <span
+                  v-for="tag in job.tags"
+                  :key="tag.id"
+                  class="inline-flex items-center px-4 py-1 mr-2 rounded text-medium font-bold leading-5 border-2 border-indigo-600 text-indigo-600"
+                >{{ tag.name.en }}</span>
+              </div>
+              <hr class="m-4 mx-16 border-gray-300" />
+            </div>
+
             <div class="inline-flex px-2 py-1 text-right sm:px-4 ">
-                  <span class="inline-flex rounded-md shadow-md">
-                        <a
-                          target="_blank"
-                          :href="job.apply_url"
-                          class="inline-flex py-2 px-10 border border-transparent text-lg leading-5 font-medium rounded-md text-gray-50 bg-green-400 hover:bg-green-500 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
-                        >Apply Now</a>
-                      </span>
+              <span class="inline-flex rounded-md shadow-md">
+                <a
+                  target="_blank"
+                  :href="job.apply_url"
+                  class="inline-flex py-2 px-10 border border-transparent text-lg leading-5 font-medium rounded-md text-gray-50 bg-green-400 hover:bg-green-500 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                >Apply Now</a>
+              </span>
             </div>
           </div>
         </div>
