@@ -48,7 +48,7 @@
       <div class="mt-8">
         <p
           class="text-center text-base leading-6 text-gray-300"
-        >&copy; 2020 LaraVueJobs, All rights reserved.</p>
+        >&copy; 2020 LaraVueJobs, created by Sonali Hirave.</p>
       </div>
     </div>
   </div>

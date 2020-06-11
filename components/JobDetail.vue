@@ -14,13 +14,23 @@
 
           <div class="px-4 py-3 bg-indigo-50 text-right sm:px-6 rounded-b-md shadow-md">
             <span class="inline-flex rounded-md shadow-md">
-              <button
-                type="submit"
-                class="inline-flex justify-center py-2 px-20 border border-transparent text-lg leading-5 font-medium rounded-md text-white bg-indigo-500 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
-              >Apply Now</button>
+              <a
+                target="_blank"
+                :href="job.apply_url"
+                class="inline-flex justify-center py-2 px-20 border border-transparent text-lg leading-5 font-medium rounded-md text-white bg-indigo-500 hover:bg-green-500 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+              >Apply Now</a>
             </span>
           </div>
         </div>
+
+        <div class="inline-flex py-6 text-right">
+                  <span class="inline-flex rounded-md shadow-md">
+                        <a
+                          href="/"
+                          class="inline-flex py-2 px-7 border border-transparent text-lg leading-5 font-medium rounded-md text-gray-50 bg-green-400 hover:bg-green-500 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                        >Back to Job</a>
+                      </span>
+            </div>
       </div>
 
       <div class="mt-5 md:mt-0 md:col-span-1 border-t-8 rounded-md border-green-300">
@@ -86,10 +96,11 @@
             <hr class="m-4 mx-16 border-gray-300" />
             <div class="inline-flex px-2 py-1 text-right sm:px-4 ">
                   <span class="inline-flex rounded-md shadow-md">
-                        <button
-                          type="submit"
-                          class="inline-flex py-2 px-10 border border-transparent text-lg leading-5 font-medium rounded-md text-gray-50 bg-green-400 hover:bg-green-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
-                        >Apply Now</button>
+                        <a
+                          target="_blank"
+                          :href="job.apply_url"
+                          class="inline-flex py-2 px-10 border border-transparent text-lg leading-5 font-medium rounded-md text-gray-50 bg-green-400 hover:bg-green-500 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out"
+                        >Apply Now</a>
                       </span>
             </div>
           </div>
