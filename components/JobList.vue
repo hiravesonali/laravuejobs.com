@@ -13,7 +13,7 @@
 export default {
   data () {
     return {
-      url: 'https://api.laravuejobs.com/api/jobs',
+      url: process.env.apiBaseUrl + 'jobs',
       jobs: {}
     }
   },

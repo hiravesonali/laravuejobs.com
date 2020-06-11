@@ -1,11 +1,14 @@
 export default {
+    env: {
+        apiBaseUrl: process.env.API_BASE_URL || 'https://api.laravuejobs.com/api/'
+    },
     mode: 'universal',
     components: true,
     /*
      ** Headers of the page
      */
     head: {
-        title: process.env.npm_package_name || 'Fullstack Developer Jobs',
+        title: 'Fullstack Developer Jobs',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
