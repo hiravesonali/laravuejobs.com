@@ -75,7 +75,9 @@
         <div class="rounded-lg bg-white shadow-xs overflow-hidden">
           <div class="px-5 pt-4 flex items-center justify-between">
             <div>
-              <logo />
+              <nuxt-link to="/">
+                <img class="h-8 w-auto sm:h-8 justify-center" src="~/assets/images/logo01.png" alt="laravuejobs.com logo" />
+              </nuxt-link>
             </div>
             <div class="-mr-2">
               <button
@@ -94,24 +96,20 @@
             </div>
           </div>
           <div class="px-2 pt-2 pb-3">
-            <a
-              href="#"
+            <nuxt-link
+              to="/"
               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-300 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-            >Laravel Jobs</a>
-            <a
-              href="#"
+            >Top Jobs</nuxt-link>
+            <nuxt-link
+              to="/about"
               class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-300 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-            >VueJs Jobs</a>
-            <a
-              href="#"
-              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-300 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-            >About</a>
+            >About</nuxt-link>
           </div>
           <div>
-            <a
-              href="#"
-              class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"
-            >Log in</a>
+            <nuxt-link
+              to="/post-a-job"
+              class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-green-100 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"
+            >Post a Job</nuxt-link>
           </div>
         </div>
       </div>
