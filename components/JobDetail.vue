@@ -4,7 +4,7 @@
       <div class="mt-5 md:mt-0 md:col-span-2 border-t-8 rounded-md border-green-300">
         <div class="shadow-md sm:rounded-t-md sm:overflow-hidden">
           <div class="px-4 bg-white sm:p-6 sm:pb-2">
-            <h2 class="text-2xl font-bold text-gray-700">About Us</h2>
+            <h2 class="text-2xl font-bold text-gray-700">Job Description</h2>
             <div class="grid gap-6">
               <p class="text-md font-sm text-gray-500" v-html="job.description"></p>
             </div>
