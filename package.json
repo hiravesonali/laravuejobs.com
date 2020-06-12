@@ -15,7 +15,8 @@
     "dependencies": {
         "@nuxt/http": "^0.5.2",
         "@tailwindcss/ui": "^0.3.0",
-        "nuxt-edge": "^2.13.0-26513301.a544fc72"
+        "nuxt-edge": "^2.13.0-26513301.a544fc72",
+        "vue-content-placeholders": "^0.2.1"
     },
     "devDependencies": {
         "@nuxtjs/tailwindcss": "^1.0.0",

@@ -1,6 +1,16 @@
 <template>
   <div>
-    <div v-if="!$fetchState.pending">
+    <div v-if="$fetchState.pending">
+      <content-placeholders
+          v-for="p in 10"
+          :key="p"
+          rounded
+          class="article-card-block"
+        >
+          <content-placeholders-text :lines="3" />
+        </content-placeholders>
+      </div>
+      <div v-else>
       <job-description-header :job="job.data" />
       <job-detail :job="job.data" />
     </div>
