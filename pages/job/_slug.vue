@@ -5,7 +5,6 @@
           v-for="p in 10"
           :key="p"
           rounded
-          class="article-card-block"
         >
           <content-placeholders-text :lines="3" />
         </content-placeholders>
