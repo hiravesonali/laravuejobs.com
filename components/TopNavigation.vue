@@ -7,6 +7,7 @@
             <logo />
             <div class="-mr-2 flex items-center md:hidden">
               <button
+                @click="showMobileMenu = true"
                 type="button"
                 class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
               >
@@ -70,7 +71,7 @@
         From: "opacity-100 scale-100"
         To: "opacity-0 scale-95"
     -->
-    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+    <div v-show="showMobileMenu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
       <div class="rounded-lg shadow-md">
         <div class="rounded-lg bg-white shadow-xs overflow-hidden">
           <div class="px-5 pt-4 flex items-center justify-between">
@@ -81,6 +82,7 @@
             </div>
             <div class="-mr-2">
               <button
+                @click="showMobileMenu = false"
                 type="button"
                 class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
               >
@@ -98,16 +100,19 @@
           <div class="px-2 pt-2 pb-3">
             <nuxt-link
               to="/"
+              @click.native="showMobileMenu = false"
               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-300 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
             >Top Jobs</nuxt-link>
             <nuxt-link
               to="/about"
+              @click.native="showMobileMenu = false"
               class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-300 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
             >About</nuxt-link>
           </div>
           <div>
             <nuxt-link
               to="/post-a-job"
+              @click.native="showMobileMenu = false"
               class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-green-100 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"
             >Post a Job</nuxt-link>
           </div>
@@ -116,3 +121,12 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data: () => {
+    return {
+      showMobileMenu: false
+    }
+  }
+}
+</script>
