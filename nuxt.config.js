@@ -18,7 +18,7 @@ export default {
             { name: 'twitter:creator', content: '@shonaDesign' },
             { name: 'twitter:title', content: 'Make your career as a Fullstack Developer' },
             { name: 'twitter:description', content: 'Curated list of worldwide jobs for Laravel, VueJs, NuxtJs and TailwindCSS stack. Subscribe here to get regular updates on the job postings.' },
-            { name: 'twitter:image', content: '/website.png' },
+            { name: 'twitter:image', content: 'https://laravuejobs.com/website.png' },
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
