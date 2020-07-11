@@ -76,9 +76,9 @@
         <div class="rounded-lg bg-white shadow-xs overflow-hidden">
           <div class="px-5 pt-4 flex items-center justify-between">
             <div>
-              <nuxt-link to="/">
+              <a href="/">
                 <img class="h-8 w-auto sm:h-8 justify-center" src="~/assets/images/logo01.png" alt="laravuejobs.com logo" />
-              </nuxt-link>
+              </a>
             </div>
             <div class="-mr-2">
               <button
